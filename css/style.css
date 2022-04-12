@@ -1,0 +1,881 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  line-height: 24px;
+  font-size: 18px;
+}
+
+.container {
+  max-width: 1262px;
+  margin: 0 auto;
+}
+
+.top-info {
+  max-width: 100%;
+  height: 962px;
+  background-image: url("../images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding: 0 191px;
+}
+
+.top-info header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 56px;
+}
+
+.top-info header #logo {
+  height: 31px;
+  width: 82px;
+}
+
+.top-info header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top-info header ul li {
+  list-style-type: none;
+  padding-left: 100px;
+  cursor: pointer;
+}
+
+.top-info header ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.top-info .top-info__text {
+  margin-top: 184px;
+  width: 619px;
+}
+
+.top-info .top-info__text h1 {
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 60px;
+}
+
+.top-info .top-info__text p {
+  margin-top: 22px;
+  font-size: 16px;
+}
+
+.top-info .top-info__search {
+  margin-top: 58px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.top-info .top-info__search .search_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 60px;
+  border-bottom: 1px solid white;
+}
+
+.top-info .top-info__search .search_form .search_circle {
+  width: 20px;
+  height: 20px;
+  border: 2px solid;
+  border-radius: 50%;
+  border-color: white;
+  background: transparent;
+}
+
+.top-info .top-info__search .search_form .search_input {
+  padding: 10px 0 0 22px;
+  height: 60px;
+  width: 250px;
+  outline: none;
+  background: transparent !important;
+  border: 0;
+  color: white;
+  font-size: 20px;
+}
+
+.top-info .top-info__search .search_form .search_input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.top-info .top-info__search .search_form .search_input::-webkit-input-placeholder {
+  color: white;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.top-info .top-info__search .search_form .search_input:-ms-input-placeholder {
+  color: white;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.top-info .top-info__search .search_form .search_input::-ms-input-placeholder {
+  color: white;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.top-info .top-info__search .search_form .search_input::placeholder {
+  color: white;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.top-info .top-info__search .search_btn {
+  width: 171px;
+  height: 58px;
+  font-size: 24px;
+  line-height: 29px;
+  color: white;
+  background-color: #1B7DFF;
+  border: 0;
+  cursor: pointer;
+}
+
+.section_name {
+  font-size: 35px;
+  line-height: 42px;
+  color: #102746;
+}
+
+.link {
+  font-size: 16px;
+  text-decoration: none;
+  color: #1B7DFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.link img {
+  padding-left: 26px;
+}
+
+.line {
+  width: 253px;
+  height: 3px;
+  background-color: #1B7DFF;
+  margin-top: 7px;
+}
+
+.benefits {
+  background-color: white;
+  width: 1262px;
+  -webkit-box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
+          box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
+  padding: 93px 99px;
+  position: absolute;
+  top: 739px;
+  left: 50%;
+  margin-left: -631px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.benefits .benefits_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.benefits .benefits_info .benefits_info__description {
+  width: 317px;
+}
+
+.benefits .benefits_info .benefits_info__description .description_img {
+  height: 66px;
+  width: 66px;
+  margin: 120px 0 37px 0;
+}
+
+.benefits .benefits_info .benefits_info__description p {
+  font-size: 16px;
+  margin: 26px 0 40px 0;
+}
+
+.trip {
+  margin-top: 563px;
+}
+
+.trip .trip_name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.trip .trip_pictures {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 36px;
+}
+
+.trip .trip_pictures #mount {
+  width: 619px;
+  height: 354px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(21, 24, 36, 0.4)), to(rgba(21, 24, 36, 0.4))), url("../images/mount.png");
+  background-image: linear-gradient(rgba(21, 24, 36, 0.4), rgba(21, 24, 36, 0.4)), url("../images/mount.png");
+  background-size: cover;
+}
+
+.trip .trip_pictures #mount span {
+  display: inline-block;
+  color: white;
+  font-size: 50px;
+  line-height: 60px;
+  margin: 267px 0 0 29px;
+}
+
+.trip .trip_pictures #mount:hover {
+  background-image: url("../images/mount.png");
+}
+
+.trip .trip_pictures #kyoto {
+  width: 635px;
+  height: 354px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(21, 24, 36, 0.4)), to(rgba(21, 24, 36, 0.4))), url("../images/kyoto.png");
+  background-image: linear-gradient(rgba(21, 24, 36, 0.4), rgba(21, 24, 36, 0.4)), url("../images/kyoto.png");
+  background-size: cover;
+}
+
+.trip .trip_pictures #kyoto span {
+  display: inline-block;
+  color: white;
+  font-size: 50px;
+  line-height: 60px;
+  margin: 267px 0 0 29px;
+}
+
+.trip .trip_pictures #kyoto:hover {
+  background-image: url("../images/kyoto.png");
+}
+
+.trip .trip_pictures #tokyo {
+  width: 415px;
+  height: 283px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(21, 24, 36, 0.4)), to(rgba(21, 24, 36, 0.4))), url("../images/tokyo.png");
+  background-image: linear-gradient(rgba(21, 24, 36, 0.4), rgba(21, 24, 36, 0.4)), url("../images/tokyo.png");
+  background-size: cover;
+  margin-top: 10px;
+}
+
+.trip .trip_pictures #tokyo span {
+  display: inline-block;
+  color: white;
+  font-size: 50px;
+  line-height: 60px;
+  margin: 196px 0 0 32px;
+}
+
+.trip .trip_pictures #tokyo:hover {
+  background-image: url("../images/tokyo.png");
+}
+
+.trip .trip_pictures #niigata {
+  width: 415px;
+  height: 283px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(21, 24, 36, 0.4)), to(rgba(21, 24, 36, 0.4))), url("../images/niigata.png");
+  background-image: linear-gradient(rgba(21, 24, 36, 0.4), rgba(21, 24, 36, 0.4)), url("../images/niigata.png");
+  background-size: cover;
+  margin-top: 10px;
+}
+
+.trip .trip_pictures #niigata span {
+  display: inline-block;
+  color: white;
+  font-size: 50px;
+  line-height: 60px;
+  margin: 196px 0 0 32px;
+}
+
+.trip .trip_pictures #niigata:hover {
+  background-image: url("../images/niigata.png");
+}
+
+.trip .trip_pictures #sapporo {
+  width: 414px;
+  height: 283px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(21, 24, 36, 0.4)), to(rgba(21, 24, 36, 0.4))), url("../images/sapporo.png");
+  background-image: linear-gradient(rgba(21, 24, 36, 0.4), rgba(21, 24, 36, 0.4)), url("../images/sapporo.png");
+  background-size: cover;
+  margin-top: 10px;
+}
+
+.trip .trip_pictures #sapporo span {
+  display: inline-block;
+  color: white;
+  font-size: 50px;
+  line-height: 60px;
+  margin: 196px 0 0 32px;
+}
+
+.trip .trip_pictures #sapporo:hover {
+  background-image: url("../images/sapporo.png");
+}
+
+.trip .trip_description .trip_description__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 131px;
+}
+
+.trip .trip_description .trip_description__content #tottori {
+  width: 597px;
+  height: 354px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(216, 216, 216, 0)), to(rgba(216, 216, 216, 0))), url("../images/tottori.png");
+  background-image: linear-gradient(rgba(216, 216, 216, 0), rgba(216, 216, 216, 0)), url("../images/tottori.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.trip .trip_description .trip_description__content #arashiyama {
+  width: 597px;
+  height: 354px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(216, 216, 216, 0)), to(rgba(216, 216, 216, 0))), url("../images/arashiyama.png");
+  background-image: linear-gradient(rgba(216, 216, 216, 0), rgba(216, 216, 216, 0)), url("../images/arashiyama.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.trip .trip_description .trip_description__content .trip_description__text {
+  width: 519px;
+}
+
+.trip .trip_description .trip_description__content .trip_description__text h3 {
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 500;
+  color: #102746;
+}
+
+.trip .trip_description .trip_description__content .trip_description__text p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #102746;
+  margin: 85px 0 58px 0;
+}
+
+.trip .trip_description .trip_description__content:last-child {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  margin-top: 100px;
+}
+
+.places {
+  margin-top: 107px;
+}
+
+.places .places_publications {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.places .places_publications .publication {
+  width: 386px;
+  margin-top: 54px;
+}
+
+.places .places_publications .publication #publication_nagoya {
+  height: 377px;
+  background-size: cover;
+  padding-top: 322px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-image: url("../images/publ1.png");
+}
+
+.places .places_publications .publication #publication_niigata {
+  height: 377px;
+  background-size: cover;
+  padding-top: 322px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-image: url("../images/publ2.png");
+}
+
+.places .places_publications .publication #publication_osaka {
+  height: 377px;
+  background-size: cover;
+  padding-top: 322px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-image: url("../images/publ3.png");
+}
+
+.places .places_publications .publication #publication_saitama {
+  height: 377px;
+  background-size: cover;
+  padding-top: 322px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-image: url("../images/publ4.png");
+}
+
+.places .places_publications .publication #publication_ueno {
+  height: 377px;
+  background-size: cover;
+  padding-top: 322px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-image: url("../images/publ5.png");
+}
+
+.places .places_publications .publication #publication_shibuya {
+  height: 377px;
+  background-size: cover;
+  padding-top: 322px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-image: url("../images/publ6.png");
+}
+
+.places .places_publications .publication .publication_picture__name {
+  background-color: rgba(21, 24, 36, 0.6);
+  height: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 25px;
+}
+
+.places .places_publications .publication .publication_picture__name span {
+  font-size: 18px;
+  color: white;
+}
+
+.places .places_publications .publication .publication_picture__name div {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.places .places_publications .publication .publication_picture__name div span {
+  font-size: 16px;
+  padding-left: 14px;
+}
+
+.places .places_publications .publication .publication_picture__name div img {
+  padding-left: 5px;
+}
+
+.places .places_publications .publication p {
+  font-size: 16px;
+  color: #102746;
+  margin: 45px 0 31px 0;
+}
+
+.places .places_publications .publication button {
+  height: 42px;
+  width: 118px;
+  background-color: #1B7DFF;
+  border: 0;
+  color: white;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+#video {
+  margin-top: 144px;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+#video .video__poster {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../images/video-play.png");
+  background-size: cover;
+  background-position: center;
+  z-index: 3;
+}
+
+#video video[poster] {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+footer {
+  background-color: #0E1D28;
+  color: white;
+  margin-top: -10px;
+}
+
+footer .footer_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 119px 0;
+}
+
+footer .footer_info img {
+  width: 170px;
+  height: 64px;
+}
+
+footer .footer_info .footer_info__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .footer_info .footer_info__links ul {
+  margin: 0 40px 0 119px;
+  list-style-type: none;
+}
+
+footer .footer_info .footer_info__links ul li {
+  margin-bottom: 3px;
+}
+
+footer .footer_info .footer_info__links ul a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+@media (max-width: 1284px) {
+  .container {
+    max-width: 1062px;
+  }
+  .benefits {
+    width: 1062px;
+    margin-left: -531px;
+  }
+  .trip .trip_pictures #mount {
+    width: 519px;
+  }
+  .trip .trip_pictures #kyoto {
+    width: 535px;
+  }
+  .trip .trip_pictures #tokyo {
+    width: 315px;
+  }
+  .trip .trip_pictures #sapporo {
+    width: 314px;
+  }
+  .trip .trip_description .trip_description__content .trip_description__text {
+    width: 419px;
+  }
+  .places .places_publications .publication {
+    width: 306px;
+  }
+}
+
+@media (max-width: 1124px) {
+  .container {
+    max-width: 862px;
+  }
+  .top-info {
+    padding: 0;
+  }
+  .top-info header ul li {
+    padding-left: 50px;
+  }
+  .top-info .top-info__search .search_form {
+    margin-right: 20px;
+  }
+  .top-info .top-info__search .search_form .search_input {
+    padding: 5px 0 0 15px;
+    height: 40px;
+  }
+  .top-info .top-info__search .search_btn {
+    width: 70px;
+    height: 45px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .benefits {
+    width: 862px;
+    margin-left: -431px;
+    padding: 50px 30px;
+  }
+  .trip .trip_pictures #mount, .trip .trip_pictures #kyoto {
+    width: 419px;
+    height: 254px;
+  }
+  .trip .trip_pictures #mount span, .trip .trip_pictures #kyoto span {
+    margin: 167px 0 0 29px;
+  }
+  .trip .trip_pictures #tokyo, .trip .trip_pictures #niigata, .trip .trip_pictures #sapporo {
+    width: 275px;
+  }
+  .trip .trip_description .trip_description__content .trip_description__text {
+    width: 359px;
+  }
+  .trip .trip_description .trip_description__content #tottori, .trip .trip_description .trip_description__content #arashiyama {
+    width: 397px;
+  }
+  .places .places_publications .publication {
+    width: 256px;
+  }
+  .places .places_publications .publication #publication_nagoya, .places .places_publications .publication #publication_niigata, .places .places_publications .publication #publication_osaka, .places .places_publications .publication #publication_saitama, .places .places_publications .publication #publication_ueno, .places .places_publications .publication #publication_shibuya {
+    height: 277px;
+    padding-top: 222px;
+  }
+  footer .footer_info .footer_info__links ul {
+    margin: 0 40px 0 49px;
+  }
+}
+
+@media (max-width: 901px) {
+  .container {
+    max-width: 662px;
+  }
+  .benefits {
+    width: 662px;
+    margin-left: -331px;
+  }
+  .benefits .benefits_info .benefits_info__description h3 {
+    font-size: 16px;
+  }
+  .trip .trip_pictures #mount, .trip .trip_pictures #kyoto {
+    width: 325px;
+  }
+  .trip .trip_pictures #tokyo, .trip .trip_pictures #niigata, .trip .trip_pictures #sapporo {
+    width: 215px;
+    height: 253px;
+  }
+  .trip .trip_pictures #tokyo span, .trip .trip_pictures #niigata span, .trip .trip_pictures #sapporo span {
+    margin: 167px 0 0 19px;
+  }
+  .trip .trip_description .trip_description__content .trip_description__text {
+    width: 259px;
+  }
+  .trip .trip_description .trip_description__content .trip_description__text p {
+    margin: 45px 0 38px 0;
+  }
+  .trip .trip_description .trip_description__content #tottori, .trip .trip_description .trip_description__content #arashiyama {
+    width: 297px;
+  }
+  footer .footer_info .footer_info__links ul {
+    margin: 0 10px 0 29px;
+  }
+}
+
+@media (max-width: 730px) {
+  .container {
+    max-width: 462px;
+  }
+  .top-info header ul li {
+    padding-left: 30px;
+  }
+  .top-info .top-info__text {
+    width: 100%;
+    margin-top: 100px;
+  }
+  .top-info .top-info__text h1 {
+    font-size: 45px;
+  }
+  .top-info .top-info__search {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-top: 18px;
+  }
+  .top-info .top-info__search .search_form {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .top-info .top-info__search .search_btn {
+    width: 100%;
+  }
+  .benefits {
+    width: 462px;
+    margin-left: -231px;
+  }
+  .benefits .benefits_info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .benefits .benefits_info .benefits_info__description .description_img {
+    margin: 40px 0;
+  }
+  .section_name {
+    font-size: 22px;
+  }
+  .trip {
+    margin-top: 963px;
+  }
+  .trip .trip_pictures {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .trip .trip_pictures #mount, .trip .trip_pictures #kyoto, .trip .trip_pictures #tokyo, .trip .trip_pictures #niigata, .trip .trip_pictures #sapporo {
+    width: 425px;
+    margin-top: 10px;
+  }
+  .trip .trip_description .trip_description__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .trip .trip_description .trip_description__content .trip_description__text {
+    width: 425px;
+    margin-top: 20px;
+  }
+  .trip .trip_description .trip_description__content #tottori, .trip .trip_description .trip_description__content #arashiyama {
+    width: 425px;
+  }
+  .trip .trip_description .trip_description__content:last-child {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .places .places_publications {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .places .places_publications .publication {
+    width: 425px;
+  }
+  #video {
+    height: 400px;
+  }
+  footer .footer_info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  footer .footer_info .footer_info__links ul {
+    margin: 0 50px 50px 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    max-width: 322px;
+  }
+  .top-info header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .top-info header ul li {
+    padding-left: 0;
+    margin-top: 20px;
+  }
+  .top-info .top-info__text {
+    margin-top: 40px;
+  }
+  .benefits {
+    width: 322px;
+    margin-left: -161px;
+  }
+  .benefits .benefits_info .benefits_info__description {
+    width: 100%;
+  }
+  .section_name {
+    width: 200px;
+    line-height: 28px;
+  }
+  .line {
+    width: 153px;
+  }
+  .trip .trip_pictures #mount, .trip .trip_pictures #kyoto, .trip .trip_pictures #tokyo, .trip .trip_pictures #niigata, .trip .trip_pictures #sapporo {
+    width: 322px;
+  }
+  .trip .trip_description .trip_description__content .trip_description__text {
+    width: 100%;
+  }
+  .trip .trip_description .trip_description__content #tottori, .trip .trip_description .trip_description__content #arashiyama {
+    width: 100%;
+  }
+  .places .places_publications .publication {
+    width: 100%;
+  }
+  footer .footer_info .footer_info__links ul {
+    margin: 0 15px 50px 0;
+  }
+}

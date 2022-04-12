@@ -1,0 +1,375 @@
+@media (max-width:1284px) {
+    .container {
+        max-width: 1062px;
+    }
+
+    .benefits {
+        width: 1062px;
+        margin-left: -531px;
+    }
+    .trip {
+        .trip_pictures {
+            #mount {
+                width: 519px;
+            }
+            #kyoto {
+                width: 535px;
+            }
+            #tokyo {
+                width: 315px;
+            }
+            #sapporo {
+                width: 314px;
+            }
+        }
+    }
+
+    .trip {
+        .trip_description {
+            .trip_description__content {
+                .trip_description__text {
+                    width: 419px;
+                }
+            }
+        }
+    }
+
+    .places {
+        .places_publications {
+            .publication {
+                width: 306px;
+            }
+        }
+    }
+}
+
+@media (max-width:1124px) {
+    .container {
+        max-width: 862px;
+    }
+
+    .top-info {
+        padding: 0;
+        header {
+            ul {
+                li {
+                    padding-left: 50px;
+                }
+            }
+        }
+        .top-info__search {
+            .search_form {
+                margin-right: 20px;
+                .search_input {
+                    padding: 5px 0 0 15px;
+                    height: 40px
+                }
+            }
+            .search_btn {
+                width: 70px;
+                height: 45px;
+                font-size: 14px;
+                line-height: 16px;
+            }
+        }
+    }
+
+    .benefits {
+        width: 862px;
+        margin-left: -431px;
+        padding: 50px 30px;
+    }
+    .trip {
+        .trip_pictures {
+            #mount, #kyoto {
+                width: 419px;
+                height: 254px;
+                span {
+                    margin: 167px 0 0 29px;
+                }
+            }
+            #tokyo,  #niigata, #sapporo {
+                width: 275px;
+            }
+        }
+    }
+
+
+    .trip {
+        .trip_description {
+            .trip_description__content {
+                .trip_description__text {
+                    width: 359px;
+                }
+                #tottori, #arashiyama {
+                    width: 397px;
+                }
+            }
+        }
+    }
+
+    .places {
+        .places_publications {
+            .publication {
+                width: 256px;
+                #publication_nagoya, #publication_niigata, #publication_osaka, #publication_saitama, #publication_ueno, #publication_shibuya {
+                    height: 277px;
+                    padding-top: 222px;
+                }
+            }
+        } 
+    }
+
+    footer {
+        .footer_info {
+            .footer_info__links {
+                ul {
+                    margin: 0 40px 0 49px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:901px) {
+    .container {
+        max-width: 662px;
+    }
+
+    .benefits {
+        width: 662px;
+        margin-left: -331px;
+        .benefits_info {
+            .benefits_info__description {
+                h3 {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .trip {
+        .trip_pictures {
+            #mount, #kyoto {
+                width: 325px;
+            }
+            #tokyo,  #niigata, #sapporo {
+                width: 215px;
+                height: 253px;
+                span {
+                    margin: 167px 0 0 19px;
+                }
+            }
+        }
+    }
+
+
+    .trip {
+        .trip_description {
+            .trip_description__content {
+                .trip_description__text {
+                    width: 259px;
+                    p {
+                        margin: 45px 0 38px 0;
+                    }
+                }
+                #tottori, #arashiyama {
+                    width: 297px;
+                }
+            }
+        }
+    }
+
+    footer {
+        .footer_info {
+            .footer_info__links {
+                ul {
+                    margin: 0 10px 0 29px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:730px) {
+    .container {
+        max-width: 462px;
+    }
+    .top-info {
+        header {
+            ul {
+                li {
+                    padding-left: 30px;
+                }
+            }
+        }
+        .top-info__text {
+            width: 100%;
+            margin-top: 100px;
+            h1 {
+                font-size: 45px;
+            }
+       }
+       .top-info__search {
+            flex-direction: column;
+            align-items: flex-start;
+            margin-top: 18px;
+            .search_form {
+                margin-bottom: 20px;
+                width: 100%;
+            }
+            .search_btn {
+                width: 100%;
+            }
+       }
+    }
+
+    .benefits {
+        width: 462px;
+        margin-left: -231px;
+        .benefits_info {
+            flex-direction: column;
+            .benefits_info__description {
+                .description_img{
+                    margin: 40px 0;
+                }
+            }
+        }
+    }
+
+    .section_name {
+        font-size: 22px;
+    }
+
+    .trip {
+        margin-top: 963px;
+        .trip_pictures {
+            justify-content: center;
+            #mount, #kyoto, #tokyo,  #niigata, #sapporo {
+                width: 425px;
+                margin-top: 10px;
+            }
+        }
+    }
+
+
+    .trip {
+        .trip_description {
+            .trip_description__content {
+                flex-direction: column;
+                .trip_description__text {
+                    width: 425px;
+                    margin-top: 20px;
+                }
+                #tottori, #arashiyama {
+                    width: 425px;
+                }
+            }
+            .trip_description__content:last-child {
+                flex-direction: column;
+            }
+        }
+    }
+
+    .places {
+        .places_publications {
+            justify-content: center;
+            .publication {
+                width: 425px;
+            }
+        }
+    }
+
+    #video {
+        height: 400px;
+    }
+
+    footer {
+        .footer_info {
+            flex-direction: column-reverse;
+            .footer_info__links {
+                ul {
+                    margin: 0 50px 50px 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:500px) {
+    .container {
+        max-width: 322px;
+    }
+    .top-info {
+        header {
+            flex-direction: column;
+            ul {
+                li {
+                    padding-left: 0;
+                    margin-top: 20px;
+                }
+            }
+        }
+        .top-info__text {
+            margin-top: 40px;
+        }
+    }
+
+    .benefits {
+        width: 322px;
+        margin-left: -161px;
+        .benefits_info {
+            .benefits_info__description {
+                width: 100%;
+            }
+        }
+    }
+
+    .section_name {
+        width: 200px;
+        line-height: 28px;
+    }
+
+    .line {
+        width: 153px;
+    }
+
+    .trip {
+        .trip_pictures {
+            #mount, #kyoto, #tokyo,  #niigata, #sapporo {
+                width: 322px;
+            }
+        }
+    }
+
+
+    .trip {
+        .trip_description {
+            .trip_description__content {
+                .trip_description__text {
+                    width: 100%;
+                }
+                #tottori, #arashiyama {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .places {
+        .places_publications {
+            .publication {
+                width: 100%;
+            }
+        }
+    }
+
+    footer {
+        .footer_info {
+            .footer_info__links {
+                ul {
+                    margin: 0 15px 50px 0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {margin:0; padding:0}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    line-height: 24px;
+    font-size: 18px;
+}
+
+.container {
+    max-width: 1262px;
+    margin: 0 auto;
+}
+
+.top-info {
+    max-width: 100%;
+    height: 962px;
+    background-image: url('../images/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 0 191px;
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 56px;
+    
+        #logo {
+            height: 31px;
+            width: 82px;
+        }
+    
+        ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+    
+            li {
+                list-style-type: none;
+                padding-left: 100px;
+                cursor: pointer;
+                a {
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    
+    .top-info__text {
+        margin-top: 184px;
+        width: 619px;
+    
+        h1 {
+            font-size: 50px;
+            font-weight: 500;
+            line-height: 60px;
+        }
+    
+        p {
+            margin-top: 22px;
+            font-size: 16px;
+        }
+    }
+    
+    .top-info__search {
+        margin-top: 58px;
+        display: flex;
+        align-items: flex-end;
+    
+        .search_form {
+            display: flex;
+            align-items: center;
+            margin-right: 60px;
+            border-bottom: 1px solid white;
+    
+            .search_circle {
+                width: 20px;
+                height: 20px;
+                border: 2px solid;
+                border-radius: 50%;
+                border-color: white;
+                background: transparent;
+            }
+        
+            .search_input {
+                padding: 10px 0 0 22px;
+                height: 60px;
+                width: 250px;
+                outline: none;
+                background: transparent !important;
+                border: 0;
+                color:white;
+                font-size: 20px;
+                &:focus::-webkit-input-placeholder {color: transparent}
+        
+                &::placeholder {
+                    color:white;
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+            }
+        }
+    
+        .search_btn {
+            width: 171px;
+            height: 58px;
+            font-size: 24px;
+            line-height: 29px;
+            color: white;
+            background-color: #1B7DFF;
+            border: 0;
+            cursor: pointer;
+        }
+    }
+}
+
+.section_name {
+    font-size: 35px;
+    line-height: 42px;
+    color: #102746;
+}
+
+.link {
+    font-size: 16px;
+    text-decoration: none;
+    color: #1B7DFF;
+    display: flex;
+    align-items: center;
+
+    img{
+        padding-left: 26px;
+    }
+}
+
+.line {
+    width: 253px;
+    height: 3px;
+    background-color: #1B7DFF;
+    margin-top: 7px;
+}
+
+.benefits {
+    background-color: white;
+    width: 1262px;
+    box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
+    padding: 93px 99px;
+    position: absolute;
+    top: 739px;
+    left: 50%; 
+    margin-left: -631px;
+    box-sizing: border-box;
+
+    .benefits_info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; 
+
+        .benefits_info__description {
+            width: 317px;
+
+            .description_img {
+                height: 66px;
+                width: 66px;
+                margin: 120px 0 37px 0;
+            }
+
+            p {
+                font-size: 16px;
+                margin: 26px 0 40px 0;
+            }
+        }
+    }
+}
+
+.trip {
+    margin-top: 563px;
+
+    .trip_name {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .trip_pictures {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 36px;
+        @mixin span_style {
+            display: inline-block;
+            color: white;
+            font-size: 50px;
+            line-height: 60px;
+        }
+        #mount {
+            width: 619px;
+            height: 354px;
+            background-image: linear-gradient(rgba(21, 24, 36, 0.4), rgba(21, 24, 36, 0.4)) ,  url("../images/mount.png");
+            background-size: cover;
+            span {
+                @include span_style;
+                margin: 267px 0 0 29px;
+            }
+            &:hover {
+                background-image: url("../images/mount.png");
+            }
+        }
+        #kyoto {
+            width: 635px;
+            height: 354px;
+            background-image: linear-gradient(rgba(21, 24, 36, 0.4), rgba(21, 24, 36, 0.4)) ,  url("../images/kyoto.png");
+            background-size: cover;
+            span {
+                @include span_style;
+                margin: 267px 0 0 29px;
+            }
+            &:hover {
+                background-image: url("../images/kyoto.png");
+            }
+        }
+        #tokyo {
+            width: 415px;
+            height: 283px;
+            background-image: linear-gradient(rgba(21, 24, 36, 0.4), rgba(21, 24, 36, 0.4)) ,  url("../images/tokyo.png");
+            background-size: cover;
+            margin-top: 10px;
+            span {
+                @include span_style;
+                margin: 196px 0 0 32px;
+            }
+            &:hover {
+                background-image: url("../images/tokyo.png");
+            }
+        }
+        #niigata {
+            width: 415px;
+            height: 283px;
+            background-image: linear-gradient(rgba(21, 24, 36, 0.4), rgba(21, 24, 36, 0.4)) ,  url("../images/niigata.png");
+            background-size: cover;
+            margin-top: 10px;
+            span {
+                @include span_style;
+                margin: 196px 0 0 32px;
+            }
+            &:hover {
+                background-image: url("../images/niigata.png");
+            }
+        }
+        #sapporo {
+            width: 414px;
+            height: 283px;
+            background-image: linear-gradient(rgba(21, 24, 36, 0.4), rgba(21, 24, 36, 0.4)) ,  url("../images/sapporo.png");
+            background-size: cover;
+            margin-top: 10px;
+            span {
+                @include span_style;
+                margin: 196px 0 0 32px;
+            }
+            &:hover {
+                background-image: url("../images/sapporo.png");
+            }
+        }
+    }
+
+    .trip_description {
+
+        .trip_description__content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 131px;
+
+            #tottori {
+                width: 597px;
+                height: 354px;
+                background-image: linear-gradient(rgba(216, 216, 216, 0), rgba(216, 216, 216, 0)) ,  url("../images/tottori.png");
+                background-size: cover;
+                background-position: center;
+            }
+
+            #arashiyama {
+                width: 597px;
+                height: 354px;
+                background-image: linear-gradient(rgba(216, 216, 216, 0), rgba(216, 216, 216, 0)) ,  url("../images/arashiyama.png");
+                background-size: cover;
+                background-position: center;
+            }
+
+            .trip_description__text {
+                width: 519px;
+
+                h3 {
+                    font-size: 30px;
+                    line-height: 40px;
+                    font-weight: 500;
+                    color: #102746;
+                }
+
+                p {
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #102746;
+                    margin: 85px 0 58px 0;
+                }
+            }
+        }
+
+        .trip_description__content:last-child {
+            flex-direction: row-reverse;
+            margin-top: 100px;
+        }
+    }
+}
+
+@mixin picture {
+    height: 377px;
+    background-size: cover;
+    padding-top: 322px;
+    box-sizing: border-box;
+}
+
+.places {
+    margin-top: 107px;
+
+    .places_publications {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;  
+
+        .publication {
+            width: 386px;
+            margin-top: 54px;
+            
+            #publication_nagoya {
+                @include picture;
+                background-image: url("../images/publ1.png"); 
+            }
+            #publication_niigata {
+                @include picture;
+                background-image: url("../images/publ2.png"); 
+            }
+            #publication_osaka {
+                @include picture;
+                background-image: url("../images/publ3.png"); 
+            }
+            #publication_saitama {
+                @include picture;
+                background-image: url("../images/publ4.png"); 
+            }
+            #publication_ueno {
+                @include picture;
+                background-image: url("../images/publ5.png"); 
+            }
+            #publication_shibuya {
+                @include picture;
+                background-image: url("../images/publ6.png"); 
+            }
+
+            .publication_picture__name{
+                background-color: rgba(21, 24, 36, 0.6);
+                height: 55px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0 25px;
+                span {
+                    font-size: 18px;
+                    color: white;
+                }
+                div {
+                    align-items: center;
+                    display: flex;
+                    span {
+                        font-size: 16px;
+                        padding-left: 14px;
+                    }
+                    img {
+                        padding-left: 5px;
+                    }
+                }
+            }
+
+            p {
+                font-size: 16px;
+                color: #102746;
+                margin: 45px 0 31px 0;
+            }
+
+            button {
+                height: 42px;
+                width: 118px;
+                background-color: #1B7DFF;
+                border: 0;
+                color: white;
+                font-size: 16px;
+                line-height: 19px;
+            }
+        }
+    }
+}
+
+#video {
+    margin-top: 144px;
+    position:relative;
+    display:inline-block;
+    width: 100%;
+
+    .video__poster {
+        position:absolute;
+        left:0;
+        top:0;
+        right:0;
+        bottom:0;
+        background-image:url("../images/video-play.png");
+        background-size:cover;
+        background-position: center;
+        z-index: 3;
+    }
+    
+    video[poster] {
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+footer {
+    background-color: #0E1D28;
+    color: white;
+    margin-top: -10px;
+
+    .footer_info {
+        display: flex;
+        justify-content: space-between;
+        padding: 119px 0;
+
+        img {
+            width: 170px;
+            height: 64px;
+        }
+        .footer_info__links {
+            display: flex;
+
+            ul {
+                margin: 0 40px 0 119px;
+                list-style-type: none;
+
+                li {
+                    margin-bottom: 3px;
+                }
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
