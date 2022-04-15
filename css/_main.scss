@@ -2,11 +2,64 @@
 
 * {margin:0; padding:0}
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Lato', sans-serif;
     font-style: normal;
     line-height: 24px;
     font-size: 18px;
+}
+
+@mixin active_elem {
+    color:#1B7DFF;
+    font-size: 20px;
+    font-weight: 600;
+}
+.active {
+    @include active_elem();
+}
+
+header {
+    padding: 56px 191px 30px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        #logo {
+            height: 31px;
+            width: 82px;
+        }
+        ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+    
+            li {
+                list-style-type: none;
+                padding-left: 100px;
+                cursor: pointer;
+                color: white;
+                &:hover {
+                    @include active_elem();
+                }
+                a {
+                    color: white;
+                    text-decoration: none;
+                    &:hover {
+                        @include active_elem();
+                    }
+                }
+            }
+        }
+    }
 }
 
 .container {
@@ -23,35 +76,10 @@ body {
     color: white;
     padding: 0 191px;
 
-    header {
-        display: flex;
-        justify-content: space-between;
-        padding-top: 56px;
     
-        #logo {
-            height: 31px;
-            width: 82px;
-        }
-    
-        ul {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-    
-            li {
-                list-style-type: none;
-                padding-left: 100px;
-                cursor: pointer;
-                a {
-                    color: white;
-                    text-decoration: none;
-                }
-            }
-        }
-    }
     
     .top-info__text {
-        margin-top: 184px;
+        padding-top: 263px;
         width: 619px;
     
         h1 {
@@ -177,7 +205,7 @@ body {
 }
 
 .trip {
-    margin-top: 563px;
+    padding-top: 563px;
 
     .trip_name {
         display: flex;
@@ -206,6 +234,7 @@ body {
             }
             &:hover {
                 background-image: url("../images/mount.png");
+                span {display: none;}
             }
         }
         #kyoto {
@@ -219,6 +248,7 @@ body {
             }
             &:hover {
                 background-image: url("../images/kyoto.png");
+                span {display: none;}
             }
         }
         #tokyo {
@@ -233,6 +263,7 @@ body {
             }
             &:hover {
                 background-image: url("../images/tokyo.png");
+                span {display: none;}
             }
         }
         #niigata {
@@ -247,6 +278,7 @@ body {
             }
             &:hover {
                 background-image: url("../images/niigata.png");
+                span {display: none;}
             }
         }
         #sapporo {
@@ -261,6 +293,7 @@ body {
             }
             &:hover {
                 background-image: url("../images/sapporo.png");
+                span {display: none;}
             }
         }
     }
@@ -323,7 +356,8 @@ body {
 }
 
 .places {
-    margin-top: 107px;
+    padding-top: 127px;
+    margin-top: -20px;
 
     .places_publications {
         display: flex;
@@ -367,6 +401,7 @@ body {
                 align-items: center;
                 justify-content: space-between;
                 padding: 0 25px;
+                cursor: pointer;
                 span {
                     font-size: 18px;
                     color: white;
@@ -380,6 +415,10 @@ body {
                     }
                     img {
                         padding-left: 5px;
+                        &:hover {
+                            width: 20px;
+                            height: 20px;
+                        }
                     }
                 }
             }
@@ -409,6 +448,7 @@ body {
     position:relative;
     display:inline-block;
     width: 100%;
+    height: 600px;
 
     .video__poster {
         position:absolute;
@@ -416,10 +456,21 @@ body {
         top:0;
         right:0;
         bottom:0;
-        background-image:url("../images/video-play.png");
+        background-image:url("../images/video.png");
         background-size:cover;
         background-position: center;
         z-index: 3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            cursor: pointer;
+            &:hover {
+                height: 112px;
+                width: 112px;
+            }
+        }
     }
     
     video[poster] {
@@ -462,3 +513,74 @@ footer {
         }
     }
 }
+
+.signin {
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    display: none;
+    .modal__content {
+        height: 400px;
+        width: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        margin: 200px auto;
+        background-color: white;
+
+        .modal_close {
+            margin-left: 85%;
+            height: 30px;
+            width: 30px;
+            border: 0;
+            font-size: 24px;
+            background-color: white;
+            cursor: pointer;
+            color: gray;
+        }
+
+        span {
+            font-size: 22px;
+            color: #102746;
+            font-weight: 600;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            input {
+                width: 300px;
+                height: 40px;
+                margin-bottom: 20px;
+                outline: none;
+                border: 0.5px solid #102746;
+                padding-left: 20px;
+                box-sizing: border-box;
+                font-size: 18px;
+                color: #102746;
+                &:focus::-webkit-input-placeholder {color: transparent}
+        
+                &::placeholder {
+                    font-size: 14px;
+                    color: darkgray;
+                    font-weight: 100;
+                }
+            }
+            input[type=submit] {
+                background-color: #1B7DFF;
+                border: 0;
+                color: white;
+                font-size: 20px;
+                height: 45px;
+                cursor: pointer;
+                padding: 0;
+            }
+        }
+    }
+}
+    

@@ -9,19 +9,21 @@
     <title>Jump off balcony</title>
 </head>
 <body>
+    <header>
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" alt="логотип" id="logo">
+                <ul>
+                    <li><a href="#articles">Articles</a></li>
+                    <li><a href="#locations">Locations</a></li>
+                    <li><a href="#video">Videos</a></li>
+                    <li>Sign in</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <div class="top-info">
         <div class="container">
-            <header>
-                <img src="images/logo.png" alt="логотип" id="logo">
-                <nav>
-                    <ul>
-                        <li><a href="#articles">Articles</a></li>
-                        <li><a href="#locations">Locations</a></li>
-                        <li><a href="#videos">Videos</a></li>
-                        <li>Sign in</li>
-                    </ul>
-                </nav>
-            </header>
             <div class="top-info__text">
                 <h1>Discover Amazing places in Japan</h1>
                 <p>Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. 
@@ -68,7 +70,7 @@
         </div>
     </section>
 
-    <section class="trip" id="locations">
+    <section class="trip">
         <div class="container">
             <div class="trip_name">
                 <h2 class="section_name">Get inspired for your next trip</h2>
@@ -117,7 +119,7 @@
         </div>
     </section>
 
-    <section class="places">
+    <section class="places" id="locations">
         <div class="container">
             <h2 class="section_name">Today top places to visit</h2>
             <div class="line"></div>
@@ -127,10 +129,10 @@
                         <div class="publication_picture__name">
                             <span>NAGOYA</span>
                             <div>
-                                <span>221</span> 
-                                <img src="images/heart.png" alt="количество лайков и комментариев">
+                                <span class="like_value">221</span> 
+                                <img src="images/heart.png" alt="likes" class="like">
                                 <span>50</span>
-                                <img src="images/comment.png">
+                                <img src="images/comment.png" alt="comments">
                             </div>
                         </div>
                     </div>
@@ -144,10 +146,10 @@
                         <div class="publication_picture__name">
                             <span>NIIGATA</span>
                             <div>
-                                <span>221</span> 
-                                <img src="images/heart.png" alt="количество лайков и комментариев">
+                                <span class="like_value">289</span> 
+                                <img src="images/heart.png" alt="likes" class="like">
                                 <span>50</span>
-                                <img src="images/comment.png">
+                                <img src="images/comment.png" alt="comments">
                             </div>
                         </div>
                     </div>
@@ -161,10 +163,10 @@
                         <div class="publication_picture__name">
                             <span>OSAKA</span>
                             <div>
-                                <span>221</span> 
-                                <img src="images/heart.png" alt="количество лайков и комментариев">
+                                <span class="like_value">200</span> 
+                                <img src="images/heart.png" alt="likes" class="like">
                                 <span>50</span>
-                                <img src="images/comment.png">
+                                <img src="images/comment.png" alt="comments">
                             </div>
                         </div>
                     </div>
@@ -178,10 +180,10 @@
                         <div class="publication_picture__name">
                             <span>SAITAMA</span>
                             <div>
-                                <span>221</span> 
-                                <img src="images/heart.png" alt="количество лайков и комментариев">
+                                <span class="like_value">667</span> 
+                                <img src="images/heart.png" alt="likes" class="like">
                                 <span>50</span>
-                                <img src="images/comment.png">
+                                <img src="images/comment.png" alt="comments">
                             </div>
                         </div>
                     </div>
@@ -195,10 +197,10 @@
                         <div class="publication_picture__name">
                             <span>UENO</span>
                             <div>
-                                <span>221</span> 
-                                <img src="images/heart.png" alt="количество лайков и комментариев">
+                                <span class="like_value">148</span> 
+                                <img src="images/heart.png" alt="likes" class="like">
                                 <span>50</span>
-                                <img src="images/comment.png">
+                                <img src="images/comment.png" alt="comments">
                             </div>
                         </div>
                     </div>
@@ -212,10 +214,10 @@
                         <div class="publication_picture__name">
                             <span>SHIBUYA</span>
                             <div>
-                                <span>221</span> 
-                                <img src="images/heart.png" alt="количество лайков и комментариев">
+                                <span class="like_value">234</span> 
+                                <img src="images/heart.png" alt="likes" class="like">
                                 <span>50</span>
-                                <img src="images/comment.png">
+                                <img src="images/comment.png" alt="comments">
                             </div>
                         </div>
                     </div>
@@ -229,15 +231,15 @@
     </section>
 
     <section id="video">
-        <div class="video__poster"></div>
-            <video controls="" poster="images/video.png" width="100%" height="609px">
+        <div class="video__poster"><img src="images/play.png" height='100px' width="100px" alt="Кнопка проигрывателя"></div>
+            <video controls="" poster="images/video.png" width="100%" height="auto">
                 <source src="video/video.mp4" type="video/mp4"/>
             </video>
     </section>
     <footer>
         <div class="container">
             <div class="footer_info">
-                <img src="images/logo.png">
+                <img src="images/logo.png" alt="логотип">
                 <div class="footer_info__links">
                     <ul>
                         <li>Company</li>
@@ -264,6 +266,18 @@
             </div>
         </div>
     </footer>
+    <div class="signin">
+        <div class="modal__content">
+            <button class="modal_close">&#10006;</button>
+            <span>Authorization</span>
+            <form action="" method="get">
+                <input type="email" placeholder="Your login">
+                <input type="password" placeholder="Password">
+                <input type="submit" value="Sign in">
+            </form>
+            <a href="#">Registration</a>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
